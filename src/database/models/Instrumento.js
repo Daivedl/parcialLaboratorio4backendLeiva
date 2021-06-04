@@ -19,7 +19,7 @@ Instrumento.init({
         type: DataTypes.STRING
     },
     imagen: {
-        type: DataTypes.BLOB
+        type: DataTypes.STRING
     },
     precio: {
         type: DataTypes.INTEGER
@@ -32,6 +32,9 @@ Instrumento.init({
     },
     descripcion: {
         type: DataTypes.STRING
+    },
+    imagenReal: {
+        type: DataTypes.BLOB
     }
 }, { modelName: 'instrumento', sequelize, timestamps: false })
 module.exports = Instrumento;

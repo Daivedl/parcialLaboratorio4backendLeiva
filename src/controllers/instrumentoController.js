@@ -41,6 +41,7 @@ const deleteById = (req, res) => {
         }
     }).then(result => {res.json(result)});
 }
+
 module.exports = {
     createOne,
     getAll,
